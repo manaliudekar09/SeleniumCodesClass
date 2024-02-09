@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="VWO">
+    <test name="Firefox">
+        <parameter name="BrowserType" value="Firefox"></parameter>
+        <classes>
+            <class name="com.vwo.tests.tests.loginTest.TestLogin"/>
+        </classes>
+    </test>
+    <test name="Chrome">
+        <parameter name="BrowserType" value="Chrome"></parameter>
+        <classes>
+            <class name="com.vwo.tests.tests.loginTest.TestLogin"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="VWO">
+    <parameter name="Environment" value="src/main/resources/db.properties"/>
+    <test name="VWO">
+        <classes>
+            <class name="com.vwo.tests.tests.loginTest.TestLogin"/>
+            <class name="com.vwo.tests.tests.loginTest.TestLoginPF"/>
+        </classes>
+    </test>
+</suite>
